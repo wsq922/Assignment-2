@@ -19,8 +19,8 @@ cacheSolve<-function(x,...) {
 		message("getting cached data")
 		return(m)
 	}
-	d<-x$get()
-	m<-solve(d)
+	data<-x$get()
+	m<-solve(data)
 	x$setCacheMatrix(m)
 	m
 }
